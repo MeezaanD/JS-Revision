@@ -63,6 +63,8 @@
 //     console.log("You're not qualified");
 // }
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Nested if statement
 // let age = 18
 // let salary = 5000;
@@ -81,6 +83,8 @@
 // }else {
 //     console.log("Bye");
 // }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Switch Statement
 // let monthInt = 1;
@@ -110,6 +114,8 @@
 //     //     console.log("Fail");
 
 // }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 /*
 for in (reads the property)(will give the index)
@@ -149,6 +155,8 @@ do while
 //     console.log("Hello World");
 // }
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 /* WHILE */
 
 // let cnt = 0;
@@ -165,6 +173,8 @@ do while
 //     cnt++;
 // }while(cnt < numbers.length);
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 /* FUNCTION */
 
 // function addition(numb1, numb2) {
@@ -174,9 +184,166 @@ do while
 // addition(5, 7);
 // addition(8, 1);
 
-/* Arrow method */ 
-let addition = (numb1, numb2) => {
-    console.log("Result:", numb1 + numb2);
-}
-addition(2, 5);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+/* Arrow method */ 
+// let plus = (numb1, numb2) => {
+//     console.log("Result:", numb1 + numb2);
+// }
+// plus(2, 5);
+
+// function subtraction(numb1, numb2) {
+//     return(numb1 - numb2) 
+// }
+// document.write("Result:", subtraction(9, 2));
+// console.log("Result:", subtraction(5, 2));
+
+// ((numb1, numb2)=>{
+//     console.log(numb1 + numb2);
+// })(8, 2);
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* Ternary Operator - (if statement, but simplified ) */
+
+// let age = prompt("enter age")
+// console.log(age >= 17 ? "You're Qualified":"You're not qualified");
+
+// function sumOf(...args) {
+//     return args.reduce( (a, b) => {
+//        return a + b
+//     })
+// }
+// console.log(sumOf(1, 2, 3, 4, 5));
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* Constructor Function */
+
+// function Person(...details) {
+//     this.firstName = details[0];
+//     this.lastName = details[1];
+//     this.email = details.at(-1);
+//     // -1 will give man the last result innit 
+// }
+// let person1 = new Person("Mario", "Luigi", "ben10@gmail.com")
+// console.log(person1);
+// console.dir(person1);
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* Joel Approach */
+// function PersonDetails(firstName, lastName, 
+//     email) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.email = email;
+
+//     this.getFirstName = ()=> {
+//         return this.firstName
+//     }
+//     this.setFirstName = (value) =>{
+//         this.firstName = value;
+//     }
+//     this.getLastName = ()=> {
+//         return this.lastName
+//     }
+//     this.setLastName = (value) =>{
+//         this.lastName = value;
+//     }
+//     this.getEmail = ()=> {
+//         return this.email
+//     }
+//     this.setEmail = (value) =>{
+//         this.email = value;
+//     }    
+    
+//     this.display = ()=> {
+//         return `
+//         Name: ${this.getFirstName()}
+//         Surname: ${this.getLastName()}
+//         Email: ${this.getEmail()}`;
+//     }
+// } 
+// let person1 = new PersonDetails("Peter", "Henk",
+// "peter@gmail.com");
+// console.log(person1.display());
+// console.log("=============");
+// person1.setFirstName("Sarah");
+// person1.setLastName("James");
+// person1.setEmail("sarah@gmail.com");
+// console.log(person1.display());
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* Method Using Class */
+
+// class PersonDetails{
+//     // Private
+//     #firstName;
+//     #lastName;
+//     #email;
+//     constructor(firstName, lastName, email) {
+//         this.#firstName = firstName;
+//         this.#lastName = lastName;
+//         this.#email = email;
+//     }
+//     // FirstName
+//     get firstName() {
+//         return this.#firstName;
+//     }
+//     set firstName(value) {
+//         this.#firstName = value;
+//     }
+//     // LastName
+//     get lastName() {
+//         return this.#lastName;
+//     }
+//     set lastName(value) {
+//         this.#lastName = value;
+//     }
+//     // Email
+//     get email() {
+//         return this.#email;
+//     }
+//     set email(value) {
+//         this.#email = value;
+//     }
+//     // Display
+//     display() {
+//         console.log(`
+//         Name: ${this.firstName}
+//         Surname: ${this.lastName}
+//         Email: ${this.email}`);
+//     }
+// }
+// let person1 = new PersonDetails("Joel", "Mukanya", "joel@gmail.com");
+// person1.display();
+// console.log("===========");
+// person1.firstName = "Peter";
+// person1.lastName = "Henk";
+// person1.email = "peter@gmail.com"
+// person1.display();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* onclick */
+/* addEventlistener */
