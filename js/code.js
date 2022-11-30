@@ -120,12 +120,13 @@ do while
 .forEach() 
 */
 
-let numbers = [8, 9, 3, 12, 34];
-let people = {
-    name: 'Brogan',
-    surname: 'Gay',
-    email: 'BroganisGay@gmail.com'
-}
+// let numbers = [8, 9, 3, 12, 34];
+// let people = {
+//     name: 'Brogan',
+//     surname: 'Gay',
+//     email: 'BroganisGay@gmail.com'
+// }
+
 // for(let numb of numbers)  {
 //     console.log(numb);
 // }
@@ -136,6 +137,46 @@ let people = {
 // }
 
 // for of
-for(let numb of numbers){
-    console.log(numbers);
+// for(let numb of numbers){
+//     console.log(numbers);
+// }
+
+// for(let i =0;;) {
+//     console.log("Lets find out");
+// }
+
+// for(let i = 0; i<5; i++){
+//     console.log("Hello World");
+// }
+
+/* WHILE */
+
+// let cnt = 0;
+// while(cnt < numbers.length) {
+    //     console.log(`Step: ${numbers[cnt]}`);
+    //     cnt++;
+    // }
+ 
+/*DO WHILE */ 
+
+// let cnt = 0;
+//  do{
+//     console.log(`Step: ${numbers[cnt]}`);
+//     cnt++;
+// }while(cnt < numbers.length);
+
+/* FUNCTION */
+
+// function addition(numb1, numb2) {
+//     console.log("Answer:", numb1 + numb2);
+// }
+// addition(4, 5,);
+// addition(5, 7);
+// addition(8, 1);
+
+/* Arrow method */ 
+let addition = (numb1, numb2) => {
+    console.log("Result:", numb1 + numb2);
 }
+addition(2, 5);
+
